@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%" id="teble_temp">
+    <strong>Scores</strong>
+  <tr>
+    <th class="fname">First Name</th>
+    <th class="lname">Last Name</th>
+    <th class="epoints">Points</th>
+  </tr>
+  <tr>
+    <td class="fname">Pratik</td>
+    <td class="lname">Bapodia</td>
+    <td class="scores">17</td>
+  </tr>
+  <tr>
+    <td class="fname">Pragyesh</td>
+    <td class="lname">Sinha</td>
+    <td class="scores">5</td>
+  </tr>
+   <tr>
+    <td class="fname">Ashutosh</td>
+    <td class="lname">Kerketta</td>
+    <td class="scores">8</td>
+  </tr>
+<tr>
+    <td class="fname">Abhay</td>
+    <td class="lname">Rajput</td>
+    <td class="scores">22</td>
+  </tr>
+</table>
+<script>
+$(document).ready(function(){
+
+    $('.scores').each(function(i, n) {
+   if($(n).text() > 10) 
+      $(n).css('color', 'white').css('background-color','blue');
+});
+});
+</script>
+</body>

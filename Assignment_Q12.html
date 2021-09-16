@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Assignment Q12</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    div ul li {
+        background : white;
+        list-style:none;
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+}
+.main-div {
+    width : 80%;
+    height : 80%;
+    background : pink;
+}
+
+</style>
+</head>
+<body>
+    <div class="main-div">
+    
+       <ul>
+       <li> try to click here</li><br><br>
+       <li> nothing will happen </li><br><br>
+       <li> Now try clicking outside anywhere in pink box </li>
+     
+       </ul>
+    </div>
+<script>
+
+$(document).ready(function()
+{     
+$('.main-div').on('click', function () { 
+    alert('You clicked on the panel element.');
+     }).children().on('click', function (e) {
+    e.stopPropagation(); 
+});
+});
+</script>
+</body>
+</html>

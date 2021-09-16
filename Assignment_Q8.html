@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment Q8</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div></div>
+<button>click</button>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+    $("div").append("<p>click</p>")
+$("div").on("click",function(){
+      $("div").append("<p>click</p>") });
+});
+	});
+</script>
+</body>
+</html>

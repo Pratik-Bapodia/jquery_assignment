@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment Q5</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style type="text/css">
+		.target{
+			font-size: 100%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div id="main">
+	<p class="target"> Paragraph P1 </p>
+</div>
+
+<div id="notmain">
+	<p class="target">Paragraph P2</p>
+</div>
+<button class="target"> Change Font Size Where ParentId=main</button>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("button").click(function() {
+				$(".target").parent("#main").css('font-size', '200%');
+			});
+			
+		});
+	</script>
+</body>
+</html>

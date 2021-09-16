@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment Q6</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style type="text/css">
+		div, p, button{
+			text-align: center;
+		}
+        #b1{
+            background-color: yellow;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+	</style>
+</head>
+<body>
+<div>
+<p> Paragraph 1</p>
+<p>Paragraph 2</p>
+<p>Paragraph 3</p>
+Random text inside div text.
+</div>
+	<button id="b1" >change divs to p</button>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#b1").click(function() {
+			$("div").replaceWith($("<p>"+$("div").text()+"</p>"));
+		});
+	});
+</script>
+</body>
+</html>

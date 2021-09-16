@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment Q14</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+    <div class="main-div">
+    
+        111111111111111111111111 <br>
+        222222222222222222222222 <br>
+    </div>
+     <br>
+    <div class="main-div">
+        111111111111111111111111<br>
+        222222222222222222222222<br>
+        333333333333333333333333<br>
+     
+    </div>
+   <br>
+    <div class="main-div">
+        111111111111111111111111 <br>
+        222222222222222222222222 <br>
+        333333333333333333333333 <br>
+        444444444444444444444444 <br>      
+    </div>
+     <br>
+
+    <div class="main-div">
+        111111111111111111111111 <br>
+        222222222222222222222222 <br>
+        333333333333333333333333 <br>
+        444444444444444444444444 <br>  
+        555555555555555555555555 <br>
+        666666666666666666666666 <br>
+    </div>
+
+<script>
+
+$(document).ready(function()
+{
+        var highest = null;
+        var high = 0;
+       $(".main-div").each(function()
+       {
+         var h = $(this).height();
+         
+              if(h > high){
+                   high = h;
+                   highest=$(this);
+                    }         
+      });
+        alert('max height '+high); 
+         $(highest).css("background-color","blue");   
+});
+
+</script>
+</body>
+</html>

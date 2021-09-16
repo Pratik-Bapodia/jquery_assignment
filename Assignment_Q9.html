@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment_Q9</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+
+</head>
+<body>
+    <div id="main-div">
+<p>Select city from the list</p>
+
+<select>
+  <option value="">Select City</option>
+  <option > Raigarh
+  <option > Raipur
+  <option > Jaipur
+  <option > Noida
+</select>
+
+<p>You are from <span><p id="city_app"></p></span> </p>
+<script>
+$(document).ready(function() { 
+         $('select').on('change', function() {
+         $("#city_app").append(this.value+" <br>")
+});
+});
+    
+</script>
+</div>
+</body>
+</html>

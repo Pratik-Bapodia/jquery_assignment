@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment Q10</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style> 
+.option {
+    padding: 20px;
+    display: none;
+    text-align: center;
+    color: purple;
+}
+
+#hover-menu {
+    padding: 5px;
+    text-align: center;
+    background-color: blue;
+    border: solid 1px white;
+    color: white;
+}
+</style>
+</head>
+<body>
+ 
+<div id="hover-menu">Hover here to see options</div>
+<div class="option">Hi</div>
+<div class="option">My name is Pratik</div>
+<div class="option">This is example of </div>
+<div class="option">Hover fucntion with toggle in jQuery</div>
+
+<script> 
+    $(document).ready(function(){
+        $("#hover-menu").hover(function(){
+            $(".option").slideToggle("slow");
+        });
+    });
+    </script>
+</body>
+</html>
