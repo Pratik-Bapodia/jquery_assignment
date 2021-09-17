@@ -1,0 +1,1 @@
+This is the example of AJAX GET method. Its fetching data from the file and showing it to us.
